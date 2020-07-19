@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "list-ul": "/components/list/list-ul",
+    "list-section": "/components/list/list-section",
+    "list-li": "/components/list/list-li"
+  }
+}

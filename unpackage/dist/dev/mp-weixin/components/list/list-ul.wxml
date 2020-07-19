@@ -1,0 +1,1 @@
+<view class="list-group data-v-e88cfe6a" style="{{'background-color:'+(bg)+';'}}"><slot></slot></view>
