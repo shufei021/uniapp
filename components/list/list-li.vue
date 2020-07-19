@@ -19,7 +19,7 @@
 		</view>
 		
 		<!-- 菜单列表 -->
-		<view class="list-li" :hover-class="[(isShowSwitch || !isHover)?'':'list-li--hover']" v-else-if="type=='menu'" :class="[disabled?'disabled':'']">
+		<view class="list-li" :hover-class="hoverClass" v-else-if="type=='menu'" :class="[disabled?'disabled':'']">
 			<view class="list-li-cell">
 				<view class="list-cell-icon" v-if="!!iconImg || !!iconType">
 					<icon v-if="!!iconType" :type="iconType" size="26"/>
@@ -135,6 +135,11 @@
 			originType:{
 				type:String | Number,
 				default:''
+			}
+		},
+		computed:{
+			hoverClass(){
+				return (this.isShowSwitch || !this.isHover)?'':'list-li--hover'
 			}
 		},
 		data() {
